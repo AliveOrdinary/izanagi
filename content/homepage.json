@@ -1,0 +1,14 @@
+{
+  "events": {
+    "backgroundImage": "/images/events-bg.jpg",
+    "logo": "/images/izanagi-events-logo.png",
+    "logoAlt": "Izanagi Events",
+    "buttonText": "Explore"
+  },
+  "cinemas": {
+    "backgroundImage": "/images/cinemas-bg.jpg",
+    "logo": "/images/izanagi-cinemas-logo.png",
+    "logoAlt": "Izanagi Cinemas",
+    "buttonText": "Explore"
+  }
+}

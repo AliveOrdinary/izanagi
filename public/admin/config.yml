@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files will be stored in the repo under public/images
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "landing"
+        label: "Landing Page"
+        file: "content/homepage.json"
+        fields:
+          - label: "Events Section"
+            name: "events"
+            widget: "object"
+            fields:
+              - { label: "Background Image", name: "backgroundImage", widget: "image" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Logo Alt Text", name: "logoAlt", widget: "string", default: "Izanagi Events" }
+              - { label: "Button Text", name: "buttonText", widget: "string", default: "Explore" }
+          - label: "Cinemas Section"
+            name: "cinemas"
+            widget: "object"
+            fields:
+              - { label: "Background Image", name: "backgroundImage", widget: "image" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Logo Alt Text", name: "logoAlt", widget: "string", default: "Izanagi Cinemas" }
+              - { label: "Button Text", name: "buttonText", widget: "string", default: "Explore" }
