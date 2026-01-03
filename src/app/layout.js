@@ -28,8 +28,28 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
           rel="stylesheet" 
         />
+        {/* Netlify Identity widget for authentication flows */}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Handle Netlify Identity redirects (password reset, email confirmation, etc.) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                  if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                      document.location.href = "/admin/";
+                    });
+                  }
+                });
+              }
+            `,
+          }}
+        />
+      </body>
     </html>
   );
 }
