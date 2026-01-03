@@ -1,13 +1,13 @@
 {
   "events": {
     "backgroundImage": "/images/events-bg.jpg",
-    "logo": "/images/izanagi-events-logo.png",
+    "logo": "/images/iz_e.png",
     "logoAlt": "Izanagi Events",
     "buttonText": "Explore"
   },
   "cinemas": {
-    "backgroundImage": "/images/cinemas-bg.jpg",
-    "logo": "/images/izanagi-cinemas-logo.png",
+    "backgroundImage": "/images/narivetta-30x40-12-m.jpg",
+    "logo": "/images/iz_c.png",
     "logoAlt": "Izanagi Cinemas",
     "buttonText": "Explore"
   }
